@@ -37,3 +37,109 @@
             input.style.width = '100px';
         });
     });
+    document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.getElementById("aboutSection");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          aboutSection.classList.add("show");
+        }
+      });
+    }, {
+      threshold: 0.3 // 30% ko‘rinsa yetarli
+    });
+
+    observer.observe(aboutSection);
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.getElementById("aboutSection1");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          aboutSection.classList.add("show");
+        }
+      });
+    }, {
+      threshold: 0.3 // 30% ko‘rinsa yetarli
+    });
+
+    observer.observe(aboutSection);
+  });
+    document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.getElementById("aboutSection2");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          aboutSection.classList.add("show");
+        }
+      });
+    }, {
+      threshold: 0.3 // 30% ko‘rinsa yetarli
+    });
+
+    observer.observe(aboutSection);
+  });
+      document.addEventListener("DOMContentLoaded", function () {
+    const aboutSection = document.getElementById("aboutSection3");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          aboutSection.classList.add("show");
+        }
+      });
+    }, {
+      threshold: 0.3 // 30% ko‘rinsa yetarli
+    });
+
+    observer.observe(aboutSection);
+  });
+    window.addEventListener("DOMContentLoaded", () => {
+    const element = document.querySelector(".fade-in");
+
+    // Dastlab display: block qilib ko‘rsatamiz
+    setTimeout(()=>{
+    element.style.display = "block";
+
+    },1000)
+
+    // Keyin kichik kechikish bilan animatsiyani boshlaymiz
+    setTimeout(() => {
+      element.classList.add("show");
+    }, 100); // 0.1s kechikish bilan asta chiqadi
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const box = document.getElementById("locationBox");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          box.classList.add("show");
+        }
+      });
+    }, {
+      threshold: 0.9 // 20% ko‘rinsa yetarli
+    });
+
+    observer.observe(box);
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.getElementById("footer");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          footer.classList.add("show-footer");
+        }
+      });
+    }, {
+      threshold: 0.1, // 30% ko‘rinsa yetarli
+    });
+
+    observer.observe(footer);
+  });

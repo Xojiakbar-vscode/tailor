@@ -22,44 +22,34 @@
       <img src="assets/1.svg" alt="">
      
     </div>
-    <div class="right-icons">
-      
-      <a href="#search"> <i class="fa-solid fa-magnifying-glass"></i></a>
+ 
    
-      <div class="user">
-        <i class="fa-regular fa-circle-user"></i></div>
-    </div>
+  <img src="assets/USER.svg" alt="">
+ 
   </header>
 
-<section class="hero">
+<section class="hero" id="aboutSection3">
   <h2>Tikuvchilik uchun hammasi bir joyda!</h2>
   <p class="fade-in">Eng sifatli mahsulotlar — Tailor Shop Namangan da.</p>
 </section>
   </div>
-<section class="about">
-  <div class="about-heading">
+<section class="about" >
+  <div class="about-heading" id="aboutSection">
     <h3>Bizning do'konimizda siz profissional va havaskor tikuvchilar uchun kerak bo'ladigan barcha mahsulotlarni topasoz:</h3>
   </div>
-  <div class="about-main">
+  <div class="about-main" id="aboutSection1">
     <ul>
       <li>Turli rangdagi va turdagi iplar</li>
       <li>Tugmalar, fermuarlar, aksessuarlar</li>
       <li>Hamda boshqa ko'plab tikuvchilik jihozlari</li>
     </ul>
-    <img src="assets/1-removebg-preview.png" alt="">
+    <img src="assets/1-removebg-preview-removebg-preview.png" alt="">
   </div>
-  <div class="about-footer">
-    <img src="assets/3-removebg-preview-removebg-preview.png" alt="">
-    <img src="assets/2-removebg-preview-removebg-preview.png" alt="">
+  <div class="about-footer" id="aboutSection2">
+    <img src="assets/3-removebg-preview-removebg-preview-removebg-preview.png" alt="">
+    <img src="assets/2-removebg-preview-removebg-preview-removebg-preview.png" alt="">
   </div>
 </section>
-<div class="search">
-  <div id="search" class="input">
-  <input type="text">
-  <div class="icon">
-  <i class="fa-solid fa-magnifying-glass"></i></div>
-</div>
-</div>
 <section class="card_container">
   
   <article>
@@ -183,7 +173,7 @@
 
 
 
-  <footer class="site-footer">
+ <footer class="site-footer hidden-footer" id="footer">
     <p class="description">
       Mahsulotlarimiz sifatli, xarid qilish oson, va raqobatbardosh narxlarda taklif etiladi.
     </p>
@@ -192,9 +182,10 @@
 <div class="footer_content">
 
     <div class="contact-info">
-      <div class="contact-item"><i class="fab fa-instagram"></i> tailor_shop_namangan</div>
-      <div class="contact-item"><i class="fab fa-telegram"></i> tailor_shop_namangan</div>
-      <div class="contact-item"><i class="fas fa-phone"></i> +998-(91)-356-04-08</div>
+
+      <div class="contact-item"><a href="https://www.instagram.com/tailor_shop_namangan?igsh=NnBmdWYxazF0ZXg2"><img src="assets/SITE instagram.svg" alt=""> tailor_shop_namangan</a></div>
+      <div class="contact-item"><a href="https://t.me/tailorshopnamangan1"><img src="assets/SITE telegram.svg" alt=""> tailor_shop_namangan</a></div>
+      <div class="contact-item"><a href="tel:+998913560508"><img src="assets/SITE phone.svg" alt="">+998-(91)-356-04-08</a></div>
     </div>
 
     <form class="contact-form">
@@ -209,7 +200,7 @@
         <img src="assets/TELEGRAM QR-CODE.svg" alt="Telegram QR" width="100">
       </div>
       <div class="qr-block">
-        <i class="fab fa-instagram"></i>
+      <i class="fa-brands fa-square-instagram"></i>
         <img src="assets/INSTAGRAM QR-CODE.svg" alt="Instagram QR" width="100">
       </div>
      <div class="qr-block" id="qrHover">
@@ -226,50 +217,6 @@
    
   </footer>
 
-<script>
-  const qr = document.getElementById('qrHover');
-  const box = document.getElementById('locationBox');
-
-  qr.addEventListener('mouseenter', () => {
-    box.classList.add('show');
-  });
-
-  qr.addEventListener('mouseleave', () => {
-    box.classList.remove('show');
-    // animatsiyadan keyin yashirish (yaxshi ko‘rinish uchun)
-    setTimeout(() => {
-      if (!box.classList.contains('show')) {
-        box.style.display = 'none';
-      }
-    }, 500); // transition vaqtiga teng bo‘lishi kerak
-  });
-
-  // Klass bilan display: block qo‘shish uchun observer
-  const observer = new MutationObserver(() => {
-    if (box.classList.contains('show')) {
-      box.style.display = 'block';
-    }
-  });
-
-  observer.observe(box, { attributes: true });
-</script>
-
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    const element = document.querySelector(".fade-in");
-
-    // Dastlab display: block qilib ko‘rsatamiz
-    setTimeout(()=>{
-    element.style.display = "block";
-
-    },1000)
-
-    // Keyin kichik kechikish bilan animatsiyani boshlaymiz
-    setTimeout(() => {
-      element.classList.add("show");
-    }, 1500); // 0.1s kechikish bilan asta chiqadi
-  });
-</script>
 
   <script src="app.js"></script>
 </body>
