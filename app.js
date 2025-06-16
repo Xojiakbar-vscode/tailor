@@ -112,21 +112,7 @@
     }, 100); // 0.1s kechikish bilan asta chiqadi
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const box = document.getElementById("locationBox");
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          box.classList.add("show");
-        }
-      });
-    }, {
-      threshold: 0.9 // 20% ko‘rinsa yetarli
-    });
-
-    observer.observe(box);
-  });
 
   document.addEventListener("DOMContentLoaded", function () {
     const footer = document.getElementById("footer");
@@ -143,3 +129,19 @@
 
     observer.observe(footer);
   });
+  const locationBox = document.getElementById('locationBox');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          locationBox.classList.add('show');
+        }
+      });
+    },
+    {
+      threshold: 1,
+    }
+  );
+
+  observer.observe(locationBox);
