@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hater Shop Namangan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header1">
+        <div class="container1">
+            <div class="header-content1">
+                <div class="logo1">
+                    <a href="index.html"><img src="assets/tailor shop (3).svg" alt="Hater Shop Namangan Logo" class="logo-image">
+                </div></a>
+                
+                <button class="catalog-btn" data-bs-toggle="modal" data-bs-target="#catalogModal" class="btn btn-primary" onclick="showCatalogModal()">
+  <img src="assets/KATALOG KVADRAT (2).svg" alt="">
+  Katalog
+</button>
+
+                
+<!-- Modal -->
+<div class="modal fade" id="catalogModal" tabindex="-1" aria-labelledby="catalogModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen" style="background-color:white; color: black; height: 90vh;">
+    <div id="modalContent">
+      <div class="modal-header">
+        <h1 class="modal-title" id="catalogModalLabel">
+          <img src="assets/KATALOG KVADRAT (2).svg" alt="" style="width: 20%; margin-left: 5rem;">
+          Katalog
+        </h1>
+        <!-- ✅ Bootstrap standart Close tugmasi -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Chap ustun - Katalog ro‘yxati -->
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>Sostavnik va razmerlar</li>
+                    <li>Markelar va zapaslar</li>
+                    <li>Dazmol machalkalar</li>
+                    <li>Kesadigan apparatlar</li>
+                    <li>Himikat va spreyles</li>
+                    <li>Maxsus tikuv iplari</li>
+                    <li>Termoprinterlar</li>
+                    <li>Tikuv iplari</li>
+                    <li>Dazmollar</li>
+                    <li>Qisqichlar</li>
+                    <li>Tugmalar</li>
+                    <li>Zamoklar</li>
+                    <li>Pistonlar</li>
+                    <li>Rezinka</li>
+                    <li>Ninalar</li>
+                    <li>Flizilin</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>Qaychilar</li>
+                    <li>Parraklar</li>
+                    <li>Jensi iplar</li>
+                    <li>Lazerlar va chiroqlar</li>
+                    <li>Steplerlar</li>
+                    <li>Tikuv mashina zapchastlari</li>
+                    <li>Arqonlar</li>
+                    <li>Qurilma va asboblar</li>
+                    <li>Meto apparatlar</li>
+                    <li>Kantovkalar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- O‘ng ustun - Rasm -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <img src="assets/image-removebg-preview.png" alt="Katalog rasmi" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+                <div class="search-container">
+                    <input type="text" placeholder="Reyting baland tovar nomi" class="search-input">
+                    <button class="search-btn">
+<img src="assets/search.svg" alt="">
+                    </button>
+                </div>
+               <div class="shop-article">
+    <img src="assets/LIKE.svg" alt="">
+    <img src="assets/USER.svg" alt="">
+    
+    <!-- Savat rasmi — modalni chaqiruvchi -->
+    <img src="assets/SAVAT (2).svg" alt="" data-bs-toggle="modal" data-bs-target="#cartModal" style="cursor: pointer;">
+</div>
+
+            </div>
+        </div>
+    </header>
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+
+
+      
+        <button type="button" class="custom-close" data-bs-dismiss="modal" aria-label="Yopish">×</button>
+    
+
+<section class="container-modal">
+  <div class="usersection">
+    <div class="img-user-container">
+      <img src="assets/USER.svg" alt="">
+    </div>
+    <h2>Mijoz</h2>
+    <a href="tel:+998913560408">+998(91)-356-04-08</a>
+
+    <div class="button-footer">
+      <button id="newOrdersBtn">Yangi buyurtmalar</button>
+      <button id="oldOrdersBtn">Qilingan buyurtmalar</button>
+
+    </div>
+  </div>
+
+  <!-- Qilingan buyurtmalar -->
+<div class="cartsection" id="oldOrders" style="display: none;">
+  <div class="cart-header">
+    <h2>Buyurtma qilingan mahsulotlar</h2>
+  </div>
+  <div class="mahsulot__cards">
+    <img src="assets/THREAD & SQUARE.svg" alt="">
+    <div class="mahsulot__card__tavsif">
+      <p>Mahsulot: Ip</p>
+      <p>Nomi: Ming Long #500</p>
+      <p>Buyurtma sanasi: 03.06.25</p>
+    </div>
+  </div>
+</div>
+
+<!-- Yangi buyurtmalar -->
+<div class="cartsection" id="newOrders">
+  <div class="cart-header">
+    <h2>Yangi buyurtmalar</h2>
+  </div>
+  <div class="card-product-container">
+    <article>
+      <div class="photo-container">
+        <span class="x-icon">×</span>
+        <img src="" alt="Rasm">
+      </div>
+      <div class="product-info">
+        <h3>Ming Long</h3>
+        <p>#416; 40/2s</p>
+      </div>
+    </article>
+    <!-- boshqa article lar shu yerda -->
+  </div>
+  <div class="card-product-footer">
+    <div class="swipe-btn" id="swipeBtn">
+      <div class="swipe-handle">→</div>
+      <div class="swipe-text">
+        <span class="initial-text">Buyurtmani tasdiqlash</span>
+        <span class="confirmed-text">Buyurtma tasdiqlandi!</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+      
+
+    </div>
+  </div>
+</div>
+
+   <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/slayder1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/slayder2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/slayder3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+            <!-- Filter Buttons -->
+            <section class="filters">
+                <button class="filter-btn ">
+                    <img src="assets/1-removebg-preview (2).png" alt="">
+                    Ninalar
+                </button>
+                <button class="filter-btn">
+                    <img src="assets/3-removebg-preview (2).png" alt="">
+                    Tikuv iplari
+                </button>
+                <button class="filter-btn">
+                <img src="assets/4-removebg-preview (1).png" alt="">
+                    Mahsus tikuv iplari
+                </button>
+                <button class="filter-btn">
+                    <img src="assets/5-removebg-preview (1).png" alt="">
+                    Tugmalar
+                </button>
+                <button class="filter-btn">
+         <img src="assets/2-removebg-preview (2).png" alt="">
+                    Rezinka
+                </button>
+            </section>
+
+            <!-- Products Grid -->
+    
+            <section class="card1_container">
+  
+  <article>
+    <div class="card1" >
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </article>
+  <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </article>
+  <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </article>
+  <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </article>
+  <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>  
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </div>
+    </article>
+      <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </article>
+  <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </article>
+  <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </article>
+  <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </article>
+  <article>
+    <div class="card1">
+
+      <div class="heart">
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <img src="" alt="">
+    </div>
+    <h3>Mahsulot nomi</h3>
+    <p>Mahsulot haqida qisqacha ma'lumot</p>
+    <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>  
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+    <div class="price">
+      <button class="add-to-cart1">Buyrutma berish</button>
+  </div>
+    </article>
+</section>
+
+            <!-- Bottom Advertisement Banner -->
+            <section class="ad-banner">
+                <div class="ad-content">
+                    <h2>REKLAMA</h2>
+
+
+
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <script>
+  const oldOrdersBtn = document.getElementById('oldOrdersBtn');
+  const newOrdersBtn = document.getElementById('newOrdersBtn');
+  const oldOrders = document.getElementById('oldOrders');
+  const newOrders = document.getElementById('newOrders');
+
+  newOrdersBtn.addEventListener('click', () => {
+    oldOrders.style.display = 'none';
+    newOrders.style.display = 'block';
+  });
+
+  oldOrdersBtn.addEventListener('click', () => {
+    newOrders.style.display = 'none';
+    oldOrders.style.display = 'block';
+  });
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <script>
+        const btn = document.getElementById('swipeBtn');
+        let isDragging = false;
+        let startX = 0;
+        let currentX = 0;
+
+        btn.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX;
+            e.preventDefault();
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            currentX = e.clientX;
+            const deltaX = currentX - startX;
+            const maxDelta = btn.offsetWidth - 50;
+            const newLeft = Math.min(Math.max(0, deltaX), maxDelta);
+            
+            btn.querySelector('.swipe-handle').style.left = `${newLeft}px`;
+            
+            if (newLeft === maxDelta) {
+                btn.classList.add('active');
+                isDragging = false;
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (!isDragging) return;
+            isDragging = false;
+            
+            if (!btn.classList.contains('active')) {
+                btn.querySelector('.swipe-handle').style.left = '0px';
+            }
+        });
+
+        // Touch events for mobile
+        btn.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startX = e.touches[0].clientX;
+            e.preventDefault();
+        });
+
+        document.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            currentX = e.touches[0].clientX;
+            const deltaX = currentX - startX;
+            const maxDelta = btn.offsetWidth - 50;
+            const newLeft = Math.min(Math.max(0, deltaX), maxDelta);
+            
+            btn.querySelector('.swipe-handle').style.left = `${newLeft}px`;
+            
+            if (newLeft === maxDelta) {
+                btn.classList.add('active');
+                isDragging = false;
+            }
+        });
+
+        document.addEventListener('touchend', () => {
+            if (!isDragging) return;
+            isDragging = false;
+            
+            if (!btn.classList.contains('active')) {
+                btn.querySelector('.swipe-handle').style.left = '0px';
+            }
+        });
+   
+
+
+
+
+    </script>
+    <script>
+function showCatalogModal() {
+  var katalogModal = new bootstrap.Modal(document.getElementById('catalogModal'));
+  katalogModal.show();
+}
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('open') === 'cartModal') {
+      const modalEl = document.getElementById('cartModal');
+      const modal = new bootstrap.Modal(modalEl);
+      modal.show();
+    }
+  });
+</script>
+
+
+</body>
+</html>

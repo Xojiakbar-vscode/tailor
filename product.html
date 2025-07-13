@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    
+    <div class="header2">
+        <a href="sotuv_bo'limi.html"><button>Orqaga qaytish</button></a>
+        <img src="assets/tailor shop (3).svg" alt=""></div>
+<div class="xabar" id="xabar"></div>
+    <div class="product-container">
+        <div class="left1">
+            <div class="img__container">
+                <div class="img1">
+                <img src="" alt="">
+
+                </div>
+                <div class="img2">
+<img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                </div>
+                
+
+            </div>
+            <div class="product-footer">
+                <button id="add-cart">Buyurtma berish</button>
+                <div class="img-heart">
+        <i class="fa-regular fa-heart"></i>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="right1">
+            <h1>Ming Long ip</h1>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quam quisquam ipsa nostrum. Numquam repellat, eligendi aperiam esse, rerum mollitia, vel perspiciatis molestias voluptatem earum tenetur repudiandae est eum asperiores.</p>
+
+
+            <div class="batafsil">
+                <p>Batafsil malumot:</p>
+                <p>Vazni:</p>
+                <p>Rangi:</p>
+                <p>Qalinligi:</p>
+            </div>
+            <h3>Reyting</h3>
+             <div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+        <input type="text" placeholder="Izoh qoldiring...">
+    </div>
+  <script>
+  let xabar = document.getElementById('xabar');
+  let addCartButton = document.getElementById('add-cart');
+
+  addCartButton.addEventListener('click', () => {
+    xabar.innerHTML = "Buyurtmangiz ro'yxatga olindi!";
+    xabar.style.color = 'white';
+    xabar.style.fontSize = '20px';
+    xabar.style.fontWeight = 'bold';
+    xabar.style.textAlign = 'center';
+    xabar.style.backgroundColor = 'red';
+    xabar.style.padding = '10px';
+    xabar.style.borderRadius = '5px';
+    xabar.style.width = '400px';
+    
+    // Har safar qayta animatsiya ishlashi uchun class yangilanadi
+    xabar.classList.remove('korsat');
+    void xabar.offsetWidth; // Reflow — animatsiyani qayta ishga tushirish uchun
+    xabar.classList.add('korsat');
+  });
+</script>
+
+</body>
+</html>

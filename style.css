@@ -17,6 +17,9 @@ scroll-behavior: smooth;
   transform: translateY(100px);
   transition: opacity 1s ease, transform 2s ease;
 }
+.modal-backdrop {
+  opacity: 0 !important; /* Fon xiraligini olib tashlaydi */
+}
 
 /* Ko‘rinadigan va animatsiyali holat */
 .fade-in.show {
@@ -68,8 +71,7 @@ header img{
 .logo img{
     width: 100%;
     height: 180px;
-  /* padding-bottom: 5rem; */
-    /* margin-left: 15rem; */
+
     object-fit: cover;
     /* height: 100%; */
 }
@@ -128,15 +130,7 @@ header img{
     font-weight: 900;
     width: 100%;
 }
-.right-icons i {
-  font-size: 3rem;
-  cursor: pointer;
-  color: white;
-    transition: color 0.3s ease;
-    position: relative;
-    left: -55px;
-    top: 7px;
-}
+
 .right-icons i:nth-child(1) {
   /* left: -3rem; */
 
@@ -243,7 +237,6 @@ header img{
   border: 1px solid black;
   border-radius: 20px;
   height: 35vh;
-
   text-align: start;
 }
 
@@ -251,7 +244,7 @@ header img{
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-gap: 1rem;
+gap: .5rem;
   border-radius: 20px;
 
 }
@@ -306,7 +299,7 @@ width: 100%;
   transition: background-color 0.3s ease;
   text-align: center;
 }
-.button .yana{
+.button a button{
   background-color: none;
   color:#A30F0F;
   font-size: 1.5rem;
@@ -315,7 +308,7 @@ width: 100%;
   border-radius: 3rem;
     cursor: pointer;
   transition: all 0.3s ease;
-  width: 10%;
+  width: 100%;
 }
 .fa-star {
   font-size: 20px;
@@ -470,6 +463,7 @@ border-radius: 50px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 40%;
 }
 
 .contact-form input {
@@ -507,9 +501,10 @@ border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 20px;
+
   margin-bottom: 30px;
+  width: 90%;
 }
 
 .qr-block {
@@ -550,7 +545,7 @@ border: 1px solid #871212;
   background-color: #a61b1b;
   color: white;
   padding: 15px;
-  border-radius: 10px;
+width: 70%;
   font-size: 14px;
   overflow: hidden;
   white-space: normal;
@@ -558,23 +553,32 @@ border: 1px solid #871212;
   opacity: 0;
   max-height: 0;
   transform: translateX(-50px);
-  transition: max-width 3s ease, max-heigt 3s ease, opacity 1s ease, transform 1s ease;
+  transition: max-width 1s ease, max-heigt 1s ease, opacity 0.1s ease, transform 0.1s ease;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
 }
-
+.location-box .location-img img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.location-box p{
+  width: 80%;
+  text-align: left;
+}
 /* ICHIDAGI TEXTLAR AVVAL YASHIRIN */
 .location-text {
   opacity: 0;
+  font-size: large;
   transform: translateY(0);
-  transition: opacity 0.6s ease 1s, transform 0.6s ease 1s; /* delay 1s */
+  transition: opacity 0.1s ease 0.5s, transform 0.6s ease 1s; /* delay 1s */
 }
 
 /* SHOW CLASS QO‘SHILGANDA */
 .location-box.show {
   max-width: 100%;
-  max-height: 80px;
+  max-height: 90px;
   opacity: 1;
   transform: translateX(0);
 }
@@ -643,3 +647,306 @@ border: 1px solid #871212;
   opacity: 1;
   transform: translateX(0);
 }
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  height: 10vh;
+}
+.product-container {
+  display: flex;
+  gap: 10rem;
+
+  width: 90%;
+  margin: 5rem auto;
+  color: black;
+}
+.product-container .left1 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+}
+.product-container .left1 .img__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+}
+.product-container .left1 .img__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.product-container .left1 .img__container .img1 {
+  border: 1px solid #A30F0F;
+  width: 50%;
+  height: 50vh;
+  border-radius: 20px;
+}
+.product-container .left1 .img__container .img2 {
+  width: 17%;
+  height: 50vh;
+  border-radius: 20px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.product-container .left1 .img__container .img2 img{
+  border: 1px solid #A30F0F;
+
+}
+.product-container .right1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* align-items: center; */
+  
+}
+.product-container .right1 .description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.product-container .right1 h1 {
+  font-size: 2.5rem;
+  color: #A30F0F;
+  
+}
+.product-container .right1 .batafsil {
+  font-size: 1.5rem;
+ gap: 1rem;
+ font-weight: 600;
+  margin-bottom: 1rem;
+}
+.product-container .right1 .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.product-footer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: end;
+
+  padding: 2rem 3rem 0 0 ;
+}
+.product-footer button {
+  background-color: #A30F0F;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  width: 50%;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+  border: none;;
+}
+.product-footer button:hover {
+  background-color: #f44336;
+}
+.product-footer i{
+  font-size: 2rem;
+  color: #A30F0F;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.product-footer .img-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 3px solid #A30F0F;
+  padding: 1rem;
+}
+.right1 h3{
+  color: #A30F0F;
+  font-size: 2rem;
+}
+.right1 .rating span {
+  /* color: #f44336; */
+  font-size: 1.5rem;
+}
+.right1 input{
+  width: 50%;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: 1px solid gray;
+  font-size: 1.2rem;
+
+}
+.right1 input::placeholder {
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.right1 input:active {
+  outline: none;
+  border: 1px solid gray;
+ 
+}
+.right1 input:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+.header2 a button{
+  background-color: #A30F0F;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.header2 a button::before{
+  content: "←";
+  margin-right: 0.5rem;
+}
+.header2 a button:hover {
+  background: none;
+  color: #f44336;
+  border: 1px solid #f44336;
+}
+.header2 a button:active {
+  background: none;
+  color: #f44336;
+  border: 1px solid #f44336;
+}
+.xabar {
+  opacity: 0;
+  transform: translateX(500px);
+  transition: all 0.5s ease-in-out;
+}
+
+.xabar.korsat {
+  animation: ongdan 1s ease-in-out forwards;
+}
+
+@keyframes ongdan {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.photo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.x-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  display: none;
+}
+.photo-container:hover .x-icon {
+  display: block;
+}
+.card-product-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.card-product-container article .photo-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #A30F0F;
+  border-radius: 20px;
+}
+.card-product-container article .photo-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+ .swipe-btn {
+            width: 420px;
+            height: 50px;
+            background: #eee;
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            transition: all 0.5s ease;
+            margin-top: 30rem;
+            margin-left: 20rem;
+            border: 1px solid #A30F0F;
+            background: none;
+            
+        }
+        .swipe-handle {
+            width: 50px;
+            
+
+            height: 100%;
+            background: red;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .swipe-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-weight: bold;
+        }
+        .swipe-btn.active {
+            background: none;
+            border-color: #f44336;
+            animation: redden 1s ease forwards;
+        }
+        @keyframes redden {
+            0% { background: none; }
+            100% { background: #f44336; }
+        }
+        .swipe-btn.active .swipe-handle {
+            opacity: 0;
+            left: calc(100% - 50px);
+        }
+        .confirmed-text {
+            display: none;
+            color: white;
+        }
+        .swipe-btn.active .confirmed-text {
+            display: block;
+        }
+        .swipe-btn.active .initial-text {
+            display: none;
+        }
+   

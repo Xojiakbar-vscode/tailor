@@ -145,3 +145,4 @@
   );
 
   observer.observe(locationBox);
+

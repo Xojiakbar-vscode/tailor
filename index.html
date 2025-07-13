@@ -15,7 +15,10 @@
 </div>
 
 <nav class="navbar" id="navbar">
-  <a href="#">Buyurtmalar</a>
+<a href="thispage.html?open=cartModal">Buyurtmalarni ko‘rish</a>
+
+
+
   <a href="#">Mahsulotlar</a>
 </nav>
     <div class="logo">
@@ -156,7 +159,7 @@
 </section>
 <div class="button">
 
-    <button class="yana">Yana</button>
+    <a href="sotuv_bo'limi.html"><button class="yana">Yana</button></a>
   </div>
 <section class="yetqazish">
   <div class="text">
@@ -200,17 +203,19 @@
       </div>
     <div class="qr-wrapper">
   <div class="qr-block" id="qrHover">
-    <i class="fas fa-map-marker-alt"></i>
+    <i style="opacity: 0;" class="fas fa-map-marker-alt"></i>
     <img src="assets/LOCATION QR-CODE.svg" alt="Website QR" width="100">
   </div>
 
   <div class="location-box" id="locationBox">
     <p class="location-text">
-      <i class="fas fa-map-marker-alt"></i>
+    
       Namangan shahridagi do‘konimizga tashrif buyuring yoki hoziroq sayt orqali xarid qiling!
+    
+     
     </p>
-    <div class="address location-text">
-      Namangan viloyati, Namangan shahri, Istiqlol ko’chasi
+   <div class="location-img">
+       <img src="assets/location.svg" alt="">
     </div>
   </div>
 </div>
@@ -222,7 +227,16 @@
    
   </footer>
 
-
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('open') === 'cartModal') {
+      const modalEl = document.getElementById('cartModal');
+      const modal = new bootstrap.Modal(modalEl);
+      modal.show();
+    }
+  });
+</script>
   <script src="app.js"></script>
 </body>
 </html>
