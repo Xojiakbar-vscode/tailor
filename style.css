@@ -1473,9 +1473,7 @@ flex-wrap: wrap;
 }
 }
 @media (min-width: 1200px) {
- body{
-  background-color: blue;
- }
+
  .about{
   height: auto;
   padding: 5rem 0;
