@@ -35,14 +35,11 @@ body {
 
 header {
   font-size: 2rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 15px 30px; */
   margin: 0 5%;
-  width: 90;
-  /* padding: 3%; */
+  width: 90%;
 }
 .header {
   height: 95vh;
@@ -51,8 +48,7 @@ header {
   background: linear-gradient(#a30f0f, #e75959);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
+  justify-content: space-between;
 }
 header img {
   width: 90px;
@@ -279,6 +275,10 @@ header img {
 }
 article h3 {
   color: black;
+  font-size: 1.7rem;
+}
+article p{
+  font-size: 1.5rem;
 }
 .button {
   display: flex;
@@ -448,6 +448,12 @@ article h3 {
   color: #871212;
   text-decoration: none;
   gap: 0.5rem;
+  font-size: 2rem;
+
+}
+.contact-item a img{
+  width: 5vw;
+  min-width: 40px;
 }
 .contact-form {
   margin-bottom: 30px;
@@ -955,14 +961,22 @@ flex-wrap: wrap;
   transform: translateY(0);
 }
 @media (max-width: 480px) {
+  .contact-item a {
+    gap: 0;
+  }
   html{
-    font-size: 8px;
+    font-size: 10px;
+  }
+  header{
+    height: 10vh;
   }
   .user{
     width: 13vw;
     height: auto;
   }
- 
+ .qr-block i{
+  font-size: 3rem;
+ }
   .hero{
   justify-content: space-between;
  
@@ -978,9 +992,10 @@ flex-wrap: wrap;
     display: block;
   }
   .about{
-    height: auto;
+    height: 50vh;
     padding:5rem 0 ;
     gap: 2rem;
+    justify-content: space-around;
   }
   .about-main img{
     display: none;
@@ -1004,6 +1019,7 @@ flex-wrap: wrap;
     text-align: left;
     width: 80%;
     margin: 0 auto;
+    list-style: disc;
   }
   .card_container {
   display: grid;
@@ -1041,7 +1057,11 @@ flex-wrap: wrap;
 }
 .contact-form{
   width: 80%;
-  margin: 0 auto;
+  margin: 5rem auto;
+
+}
+.contact-form input::placeholder{
+  font-size: 2.1rem;
 }
 .location-box{
   display: none;
@@ -1055,7 +1075,7 @@ flex-wrap: wrap;
 }
 @media (max-width: 450px) {
   html{
-    font-size: 8px;
+    font-size: 10px;
   }
 
 
