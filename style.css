@@ -1113,3 +1113,377 @@ flex-wrap: wrap;
 
 
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html{
+    font-size: 12px;
+  }
+  header{
+    height: 10vh;
+  }
+  .user{
+    width: 13vw;
+    height: auto;
+  }
+ .qr-block i{
+  font-size: 3rem;
+ }
+  .hero{
+  justify-content: space-between;
+ 
+
+  }
+  .logo img {
+    display: none;
+  }
+  .block{
+    display: none;
+  }
+  .none {
+    display: block;
+  }
+  .about{
+    height: 50vh;
+    padding:5rem 0 ;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+  .about-main img{
+    display: none;
+  }
+  .about-footer {
+    display: none;
+  }
+  .about .about-heading{
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about .about-main ul {
+    width: 100%;
+    text-align: center;
+    
+  }
+  .about .about-main ul li{
+    font-size: 2rem;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    list-style: disc;
+  }
+  .card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+ 
+}
+.card .heart i {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.card .heart i:hover {
+  color: #f44336;
+}
+.card .heart i.active {
+  color: #f44336;
+}
+.card .heart {
+  background-color: #a30f0f;
+  width: 10vw;
+
+}
+.contact-info{
+  width: 90%;
+  margin: 3rem auto;
+}
+.yetqazish .text p{
+  width: 100%;
+  text-align: center;
+}
+.yetqazish img{
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-form{
+  width: 80%;
+  margin: 5rem auto;
+
+}
+.contact-form input::placeholder{
+  font-size: 2.1rem;
+}
+.location-box{
+  display: none;
+}
+.qr-wrapper .qr-block img{
+  border: none;
+}
+#qrHover i {
+  opacity: 1 !important;
+}
+.qr-block img{
+  min-width: 200px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  html{
+    font-size: 14px;
+  }
+  header{
+    height: 10vh;
+  }
+  .user{
+    width: 13vw;
+    height: auto;
+  }
+ .qr-block i{
+  font-size: 3rem;
+ }
+  .hero{
+  justify-content: space-between;
+ 
+
+  }
+  .logo img {
+    display: none;
+  }
+  .block{
+    display: none;
+  }
+  .none {
+    display: block;
+  }
+  .about{
+    height: auto;
+    padding:10rem 0 ;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+  .about-main img{
+    display: none;
+  }
+  .about-footer {
+    display: none;
+  }
+  .about .about-heading{
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about .about-main ul {
+    width: 100%;
+    text-align: center;
+    
+  }
+  .about .about-main ul li{
+    font-size: 2rem;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    list-style: disc;
+  }
+  .card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+ 
+}
+.card .heart i {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.card .heart i:hover {
+  color: #f44336;
+}
+.card .heart i.active {
+  color: #f44336;
+}
+.card .heart {
+  background-color: #a30f0f;
+  width: 10vw;
+
+}
+.contact-info{
+  width: 90%;
+  margin: 3rem auto;
+}
+.yetqazish .text p{
+  width: 100%;
+  text-align: center;
+}
+.yetqazish img{
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-form{
+  width: 80%;
+  margin: 5rem auto;
+
+}
+.contact-form input::placeholder{
+  font-size: 2.1rem;
+}
+.location-box{
+  display: none;
+}
+.qr-wrapper .qr-block img{
+  border: none;
+}
+#qrHover i {
+  opacity: 1 !important;
+}
+.qr-block img{
+  min-width: 200px;
+}
+.price .add-to-cart {
+  width: 100%;
+  font-size: 1rem;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+ html{
+    font-size: 16px;
+  }
+  header{
+    height: 10vh;
+  }
+  .user{
+    width: 13vw;
+    height: auto;
+  }
+ .qr-block i{
+  font-size: 3rem;
+ }
+  .hero{
+  justify-content: space-between;
+ 
+
+  }
+  .logo img {
+    display: none;
+  }
+  .block{
+    display: none;
+  }
+  .none {
+    display: block;
+  }
+  .about{
+    height: auto;
+    padding:10rem 0 ;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+  .about-main img{
+    display: none;
+  }
+  .about-footer {
+    display: none;
+  }
+  .about .about-heading{
+    width: 90%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about .about-main ul {
+    width: 100%;
+    text-align: center;
+    
+  }
+  .about .about-main ul li{
+    font-size: 2rem;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    list-style: disc;
+  }
+  .card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 2fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 2fr));
+ 
+}
+.card .heart i {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.card .heart i:hover {
+  color: #f44336;
+}
+.card .heart i.active {
+  color: #f44336;
+}
+.card .heart {
+  background-color: #a30f0f;
+  width: 10vw;
+
+}
+.contact-info{
+  width: 90%;
+  margin: 3rem auto;
+}
+.yetqazish .text p{
+  width: 100%;
+  text-align: center;
+}
+.yetqazish img{
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-form{
+  width: 50%;
+  margin: 5rem auto;
+  gap: 1rem;
+
+}
+.contact-form input::placeholder{
+  font-size: 2.1rem;
+}
+.location-box{
+  display: none;
+}
+.qr-wrapper .qr-block img{
+  border: none;
+}
+#qrHover i {
+  opacity: 1 !important;
+}
+.qr-block img{
+  min-width: 200px;
+}
+.price .add-to-cart {
+  width: 100%;
+  font-size: 1rem;
+}
+}
+@media (min-width: 1200px) {
+ body{
+  background-color: blue;
+ }
+ .about{
+  height: auto;
+  padding: 5rem 0;
+ }
+   .card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 2fr));
+ 
+}
+}
