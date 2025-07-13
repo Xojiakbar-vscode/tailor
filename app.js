@@ -53,35 +53,28 @@
     observer.observe(aboutSection);
   });
   document.addEventListener("DOMContentLoaded", function () {
-    const aboutSection = document.getElementById("aboutSection1");
+  const sections = [
+    document.getElementById("aboutSection"),
+    document.getElementById("aboutSection1"),
+    document.getElementById("aboutSection2")
+  ];
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          aboutSection.classList.add("show");
-        }
-      });
-    }, {
-      threshold: 0.3 // 30% ko‘rinsa yetarli
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // Bir marta qo‘shib bo‘lgach, kuzatishni to‘xtatadi
+      }
     });
-
-    observer.observe(aboutSection);
+  }, {
+    threshold: 0.3 // Elementning 30% ko‘rinsa yetarli
   });
-    document.addEventListener("DOMContentLoaded", function () {
-    const aboutSection = document.getElementById("aboutSection2");
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          aboutSection.classList.add("show");
-        }
-      });
-    }, {
-      threshold: 0.3 // 30% ko‘rinsa yetarli
-    });
-
-    observer.observe(aboutSection);
+  sections.forEach(section => {
+    if (section) observer.observe(section);
   });
+});
+
       document.addEventListener("DOMContentLoaded", function () {
     const aboutSection = document.getElementById("aboutSection3");
 
