@@ -653,7 +653,7 @@ flex-wrap: wrap;
 .product-container {
   display: flex;
   gap: 10rem;
-
+  
   width: 90%;
   margin: 5rem auto;
   color: black;
@@ -961,6 +961,34 @@ flex-wrap: wrap;
   transform: translateY(0);
 }
 @media (max-width: 480px) {
+  .product-container{
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  .product-container .left1{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-container .left1 .img__container{
+    justify-content: center;
+    align-items: center;
+  }
+  .header2{
+    flex-direction: column;
+  }
+ .product-container .right1{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+  }
+  .product-footer{
+    justify-content: center;
+    align-items: center;
+  }
   .contact-item a {
     gap: 0;
   }
@@ -1476,7 +1504,7 @@ flex-wrap: wrap;
 
  .about{
   height: auto;
-  padding: 5rem 0;
+  padding: 3rem 0;
  }
    .card_container {
   display: grid;
